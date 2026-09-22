@@ -15,12 +15,45 @@
             background-color: #1e293b; padding: 40px;
              border-radius: 16px; border: 1px solid #334155;
         }
+        /* Σωστό font-family (διόρθωση στη γραμμή 10) */
+body {
+    font-family: sans-serif;
+}
+/* Διάταξη για τα κουμπιά */
+.social-buttons {
+    margin-top: 25px;
+    display: flex;
+    justify-content: center;
+    gap: 15px; /* Απόσταση μεταξύ των κουμπιών */
+}
+/* Στυλ του κάθε κουμπιού */
+.btn {
+    background-color: #334155; /* Το χρώμα του border της κάρτας σου */
+    color: #f8fafc;
+    text-decoration: none; /* Αφαίρεση της υπογράμμισης */
+    padding: 10px 20px;
+    border-radius: 8px;
+    font-weight: bold;
+    font-size: 14px;
+    transition: background-color 0.3s ease; /* Ομαλό εφέ αλλαγής χρώματος */
+}
+/* Εφέ όταν ακουμπάει το ποντίκι (Hover) */
+.btn:hover {
+    background-color: #1e293b; /* Πιο σκούρο φόντο στο hover */
+    border: 1px solid #334155;
+}
     </style>
 </head>
 <body>
     <div class="card">
         <h1>Γεια σου κόσμε! Αυτό είναι το portolio μου!</h1>
         <p>Σπουδάζω στο Χαροκόπειο Πανεπιστήμιο στο τμήμα Πληροφορικής και σήμερα ξεκινάω το μέλλον μου.</p>
+        <div class="social-buttons">
+    <a href="https://github.com" target="_blank" class="btn">GitHub</a>
+    <a href="https://linkedin.com" target="_blank" class="btn">LinkedIn</a>
+    <a href="mailto:το-email-σου@email.com" class="btn">Email</a>
+</div>
+    
     </div>
 </body>
 </html>
